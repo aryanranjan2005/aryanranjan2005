@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./word-swap.svg" alt="Hi, I'm ARYAN from INDIA/BHARAT" />
+  <img src="https://raw.githubusercontent.com/aryanranjan2005/aryanranjan2005/main/word-swap.svg" alt="Hi, I'm ARYAN from INDIA ↔ BHARAT" />
 </p>
 
 <p align="center">
