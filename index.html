@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INDIA ↔ BHARAT Typing Animation</title>
+  <style>
+    body, html { margin:0; padding:0; background:transparent; overflow:hidden; }
+    .text {
+      font-family: 'Fira Code', monospace;
+      font-size: 28px;
+      font-weight: bold;
+      color: #FFFFFF;
+      white-space: nowrap;
+      position: absolute; top: 0; left: 0;
+    }
+    .caret {
+      display:inline-block;
+      width:2px;
+      background:#FFFFFF;
+      animation:blink 1s steps(1) infinite;
+      vertical-align:bottom;
+      margin-left:2px;
+    }
+    @keyframes blink { 0%,50% { opacity:1 } 51%,100% { opacity:0 } }
+  </style>
+</head>
+<body>
+  <span class="text" id="txt"></span><span class="caret"></span>
+  <script>
+    const txtEl = document.getElementById('txt');
+    const prefix = "Hi 👋, I'm ARYAN from ";
+    const words = ["INDIA", "BHARAT"];
+    const TYPING_SPEED = 75;
+    const PAUSE = 600;
+    let w=0, i=0, deleting=false;
+
+    function tick() {
+      const word = words[w];
+      if (!deleting) {
+        i++;
+        txtEl.textContent = prefix + word.slice(0,i);
+        if (i===word.length) { deleting=true; setTimeout(tick, PAUSE); return; }
+      } else {
+        i--;
+        txtEl.textContent = prefix + word.slice(0,i);
+        if (i===0) { deleting=false; w=(w+1)%words.length; }
+      }
+      setTimeout(tick, TYPING_SPEED);
+    }
+    tick();
+  </script>
+</body>
+</html>
