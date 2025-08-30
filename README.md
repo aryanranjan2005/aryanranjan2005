@@ -1,4 +1,4 @@
-# 💫 About Me:
+# Greetings ✨:
 Hi, I'm Aryan<br>I am currently pursuing a Bachelor of Technology at NIT Patna
 
 
