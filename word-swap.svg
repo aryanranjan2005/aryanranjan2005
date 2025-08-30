@@ -1,101 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>INDIA ↔ BHARAT Typing Animation</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-      overflow: hidden;
-    }
-    .container {
-      font-family: 'Fira Code', monospace;
-      font-size: 28px;
-      font-weight: bold;
-      color: #FFFFFF;
-      white-space: nowrap;
-      display: inline-block;
-      position: absolute;
-      top: 0; left: 0;
-    }
-    .caret {
-      display: inline-block;
-      width: 2px;
-      background: #FFFFFF;
-      animation: blink 1s steps(1) infinite;
-      vertical-align: bottom;
-      margin-left: 2px;
-    }
-    @keyframes blink {
-      0%,50%   { opacity: 1; }
-      51%,100% { opacity: 0; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container" id="text"></div><div class="caret"></div>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="80" viewBox="0 0 720 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Clipping mask for typewriter effect -->
+    <clipPath id="wordClip">
+      <rect id="typeRect" x="0" y="-35" width="0" height="50"/>
+    </clipPath>
+    <style>
+      .static { 
+        font: bold 28px 'Fira Code', monospace; 
+        fill: #FFFFFF;
+      }
+      .word { 
+        font: bold 28px 'Fira Code', monospace; 
+        fill: #FFFFFF;
+      }
+      .caret { 
+        fill: #FFFFFF; 
+        animation: blink 1s steps(1) infinite; 
+      }
+      @keyframes blink { 
+        0%,50% { opacity: 1; } 
+        51%,100% { opacity: 0; } 
+      }
+      /* INDIA visible 0–2s, then hidden */
+      .india {
+        clip-path: url(#wordClip);
+        animation: show-india 8s infinite;
+      }
+      @keyframes show-india {
+        0%,22.5%   { opacity: 1; }
+        25%,100%   { opacity: 0; }
+      }
+      /* BHARAT visible 4s–6s, then hidden */
+      .bharat {
+        clip-path: url(#wordClip);
+        animation: show-bharat 8s infinite;
+      }
+      @keyframes show-bharat {
+        0%,47.5%   { opacity: 0; }
+        50%,72.5%  { opacity: 1; }
+        75%,100%   { opacity: 0; }
+      }
+    </style>
+  </defs>
 
-  <script>
-    const el = document.getElementById('text');
-    const frames = [
-      "Hi 👋, I'm ARYAN from INDIA",
-      "Hi 👋, I'm ARYAN from INDIA".slice(0, -1),  // backspace I
-      "Hi 👋, I'm ARYAN from INDIA".slice(0, -2),  // backspace IA
-      "Hi 👋, I'm ARYAN from INDIA".slice(0, -3),  // …
-      // continue backspacing "INDIA"
-    ];
-    // Instead of manually slicing all letters, generate programmatically:
-    function generateFrames() {
-      const init = "Hi 👋, I'm ARYAN from INDIA";
-      const target = "BHARAT";
-      const nextInit = init.slice(0, init.length - 5); // remove "INDIA"
-      
-      let seq = [];
-      // type initial full line
-      seq.push(init);
-      // backspace 5 letters
-      for (let i = init.length - 1; i >= nextInit.length; i--) {
-        seq.push(init.slice(0, i));
-      }
-      // type BHARAT
-      for (let i = 1; i <= target.length; i++) {
-        seq.push(nextInit + target.slice(0, i));
-      }
-      // hold BHARAT for a moment
-      seq.push(nextInit + target);
-      // backspace BHARAT
-      for (let i = target.length - 1; i >= 0; i--) {
-        seq.push(nextInit + target.slice(0, i));
-      }
-      // type INDIA again
-      for (let i = 1; i <= 5; i++) {
-        seq.push(nextInit + "INDIA".slice(0, i));
-      }
-      // hold INDIA
-      seq.push(init);
-      return seq;
-    }
+  <!-- Background transparent -->
+  <rect width="100%" height="100%" fill="transparent"/>
 
-    const textSeq = generateFrames();
-    const TYPING_DELAY = 75;   // ms per char
-    const HOLD_DELAY   = 600;  // ms to hold full word
+  <!-- Static prefix text -->
+  <text x="20" y="50" class="static">Hi 👋, I'm ARYAN from</text>
 
-    (async function animate() {
-      while (true) {
-        // Type/backspace through each frame
-        for (let i = 0; i < textSeq.length; i++) {
-          el.textContent = textSeq[i];
-          // Determine delay: if it's a full-word frame, hold longer
-          if (i === 0 || i === 5 + 5 /* after typing BHARAT */) {
-            await new Promise(r => setTimeout(r, HOLD_DELAY));
-          } else {
-            await new Promise(r => setTimeout(r, TYPING_DELAY));
-          }
-        }
-      }
-    })();
-  </script>
-</body>
-</html>
+  <!-- Animated word + caret -->
+  <g transform="translate(360,50)">
+    <text x="0" y="0" class="word india">INDIA</text>
+    <text x="0" y="0" class="word bharat">BHARAT</text>
+    <rect x="0" y="-28" width="3" height="32" class="caret"/>
+  </g>
+
+  <!-- SMIL typing clip animation -->
+  <animate 
+    xlink:href="#typeRect" 
+    attributeName="width"
+    values="0;0;80;80;0;0;120;120;0"
+    keyTimes="0;0.1;0.225;0.24;0.25;0.35;0.725;0.74;0.75"
+    dur="8s"
+    repeatCount="indefinite"/>
+  <!-- Caret translation to follow clip -->
+  <animateTransform
+    xlink:href=".caret"
+    attributeName="transform"
+    type="translate"
+    values="0,0;0,0;80,0;80,0;0,0;0,0;120,0;120,0;0,0"
+    keyTimes="0;0.1;0.225;0.24;0.25;0.35;0.725;0.74;0.75"
+    dur="8s"
+    repeatCount="indefinite"/>
+</svg>
