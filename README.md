@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aryanranjan2005/aryanranjan2005/main/word-swap.svg"
-       alt="Hi, I'm ARYAN from INDIA/BHARAT" />
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=FFFFFF&bg=000000&center=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+ARYAN+from+INDIA"
+    alt="Typing animation: Hi, I'm ARYAN from INDIA"
+  />
 </p>
 
 <p align="center">
