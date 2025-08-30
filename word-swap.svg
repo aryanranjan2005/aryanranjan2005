@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="720" height="80" viewBox="0 0 720 80" xmlns="http://www.w3.org/2000/svg">
+<svg width="720" height="80" viewBox="0 0 720 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <!-- Clipping mask for typewriter effect -->
     <clipPath id="wordClip">
@@ -9,11 +9,11 @@
     <style>
       .static { 
         font: bold 28px 'Fira Code', monospace; 
-        fill: #FFFFFF; /* Match your original white color */
+        fill: #FFFFFF;
       }
       .word { 
         font: bold 28px 'Fira Code', monospace; 
-        fill: #FFFFFF; /* Match your original white color */
+        fill: #FFFFFF;
       }
       .caret { 
         fill: #FFFFFF; 
@@ -24,7 +24,7 @@
         51%,100% { opacity: 0; } 
       }
       
-      /* Typing animation for INDIA (0-45% of cycle) */
+      /* Show INDIA during first half */
       .india {
         clip-path: url(#wordClip);
         animation: show-india 8s infinite;
@@ -34,7 +34,7 @@
         25%,100%   { opacity: 0; }
       }
       
-      /* Typing animation for BHARAT (50-95% of cycle) */  
+      /* Show BHARAT during second half */
       .bharat {
         clip-path: url(#wordClip);
         animation: show-bharat 8s infinite;
@@ -49,18 +49,18 @@
 
   <rect width="100%" height="100%" fill="transparent"/>
   
-  <!-- Static text -->
+  <!-- Static text that never changes -->
   <text x="20" y="50" class="static">Hi 👋, I'm ARYAN from</text>
 
-  <!-- Animated words with typewriter clipping -->
+  <!-- Animated word area -->
   <g transform="translate(360,50)">
     <text x="0" y="0" class="word india">INDIA</text>
     <text x="0" y="0" class="word bharat">BHARAT</text>
     <rect x="0" y="-28" width="3" height="32" class="caret"/>
   </g>
 
-  <!-- SMIL animations for letter-by-letter typing effect -->
-  <!-- INDIA typing: 0-22.5% (0-1.8s), erase: 22.5-25% (1.8-2s) -->
+  <!-- Letter-by-letter typing animations -->
+  <!-- Clip rect width: type INDIA (80px), erase, type BHARAT (120px), erase -->
   <animate 
     xlink:href="#typeRect" 
     attributeName="width"
@@ -69,12 +69,13 @@
     dur="8s" 
     repeatCount="indefinite"/>
     
-  <!-- Caret follows typing width -->
-  <animate 
-    xlink:href=".caret" 
-    attributeName="x"
-    values="0;0;80;80;0;0;120;120;0"
+  <!-- Caret position follows the typing -->
+  <animateTransform
+    xlink:href=".caret"
+    attributeName="transform"
+    type="translate"
+    values="0,0;0,0;80,0;80,0;0,0;0,0;120,0;120,0;0,0"
     keyTimes="0;0.1;0.225;0.24;0.25;0.35;0.725;0.74;0.75"
-    dur="8s" 
+    dur="8s"
     repeatCount="indefinite"/>
 </svg>
