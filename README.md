@@ -14,5 +14,3 @@ Hi, I'm Aryan<br>I am currently pursuing a Bachelor of Technology at NIT Patna
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
