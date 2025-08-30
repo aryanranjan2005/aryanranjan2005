@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&pause=1000&color=FFFFFF&center=true&vCenter=true&width=550&lines=Hi+%F0%9F%91%8B%2C+I'm+ARYAN+from+BHARAT;Hi+%F0%9F%91%8B%2C+I'm+ARYAN+from+INDIA" alt="Typing SVG" />
+  <img src="./word-swap.svg" alt="Hi, I'm ARYAN from INDIA/BHARAT" />
 </p>
 
 <p align="center">
@@ -21,12 +21,11 @@
 ---
 
 ### 💫 About Me
-
 Analytics-driven student engineer from NIT Patna with a proven track record of translating data into growth. I've delivered results like doubling sales for **Physics Wallah**, cutting costs by 40% for **XAM1**, and boosting enrollment at **TRADE WITH MARKET** through data-driven campaigns. I'm passionate about building efficient, high-impact products at the crossroads of finance, marketing, and technology.
 
 ---
 
-### 💡 Consulatncy and Internship Experiences
+### 💡 Consultancy and Internship Experiences
 
 <details>
   <summary><strong style="font-size:1.1em;">► Trainee Engineer Intern</strong> at <strong>Larsen & Toubro</strong></summary>
@@ -88,13 +87,12 @@ Analytics-driven student engineer from NIT Patna with a proven track record of t
 </p>
 
 **Financial & Soft Skills**
-- **Financial**: Options basics, Candle stick analysis, Industrial Economics
+- **Financial**: Options basics, Candlestick analysis, Industrial Economics
 - **Soft Skills**: Leadership, Communication, Team Management, Data Analysis, Calm under pressure
 
 ---
 
 ### 🏆 Achievements & Leadership
-
 - **Chairperson**: IEEE SB and IEEE PES, NIT Patna.
 - **President**: Coding Blocks-NIT Patna.
 - **Lead Coordinator**: Hack-O-Fest Hackathon 2024 (with Bihar Cyber Police).
@@ -102,7 +100,6 @@ Analytics-driven student engineer from NIT Patna with a proven track record of t
 ---
 
 ### 📊 My GitHub Stats
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aryanranjan2005&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Aryan's GitHub Stats"/>
   <br/>
