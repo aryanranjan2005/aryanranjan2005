@@ -38,7 +38,7 @@ Analytics-driven research engineer from NIT Patna with a proven track record of 
 </details>
 
 <details>
-  <summary><strong style="font-size:1.1em;"> Marketing Intern</strong> at <strong>TRADE WITH MARKET</strong></summary>
+  <summary><strong style="font-size:1.1em;"> Intern</strong> at <strong>TRADE WITH MARKET</strong></summary>
   <br>
   <em>Apr - May 2025</em>
   <ul>
@@ -54,7 +54,7 @@ Analytics-driven research engineer from NIT Patna with a proven track record of 
   <em>2024 - 2025</em>
   <ul>
     <li>Increased UPSC batch sales by 100% through outreach analysis of 500+ survey responses and predictive modeling.</li>
-    <li>Spearheaded the Campus Ambassador Program, a flagship revenue product at PW.</li>
+    <li>Directed Campus Ambassador Program, a flagship revenue product at PW.</li>
   </ul>
 </details>
 
