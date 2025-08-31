@@ -3,7 +3,6 @@
 <img src="https://www.google.com/search?q=https://readme-typing-svg.herokuapp.com%3Ffont%3DFira%2BCode%26size%3D30%26pause%3D1000%26color%3D20C20E%26center%3Dtrue%26vCenter%3Dtrue%26width%3D435%26lines%3DHi%2B%25F0%259F%2591%258B%252C%2BI%27m%2BARYAN%3BA%2BPassionate%2BDeveloper%2Bfrom%2BINDIA" alt="Typing SVG" />
 </a>
 </h1>
-
 <p align="center">
   <a href="https://linkedin.com/in/aryanranjan2005">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
