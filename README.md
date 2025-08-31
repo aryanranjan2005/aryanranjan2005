@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  B.Tech and Research Student @ NIT Patna | Analytics • Marketing • Finance
+  B.Tech and Research Student @ NIT Patna | Product • Analytics • Finance
 </p>
 
 ---
