@@ -5,10 +5,10 @@
   <a href="https://linkedin.com/in/aryanranjan2005">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://instagram.com/aryanranjan2005">
+  &nbsp;&nbsp; <a href="https://instagram.com/aryanranjan2005">
     <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"/>
   </a>
-  <a href="mailto:aryanr.ug22.ee@nitp.ac.in">
+  &nbsp;&nbsp; <a href="mailto:aryanr.ug22.ee@nitp.ac.in">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
 </p>
@@ -20,14 +20,14 @@
 ---
 
 ### 💫 About Me
-Analytics-driven student engineer from NIT Patna with a proven track record of translating data into growth. I've delivered results like doubling sales for **Physics Wallah**, cutting costs by 40% for **XAM1**, and boosting enrollment at **TRADE WITH MARKET** through data-driven campaigns. I'm passionate about building efficient, high-impact products at the crossroads of finance, marketing, and technology.
+Analytics-driven research engineer from NIT Patna with a proven track record of translating data into growth. I've delivered results at **Larsen & Toubro**, doubling sales for **Physics Wallah**, cutting costs by 40% for **XAM1**, and boosting enrollment at **TRADE WITH MARKET** through data-driven campaigns. I'm passionate about building efficient, high-impact products at the crossroads of finance, marketing, and technology.
 
 ---
 
 ### 💡 Consultancy and Internship Experiences
 
 <details>
-  <summary><strong style="font-size:1.1em;">► Trainee Engineer Intern</strong> at <strong>Larsen & Toubro</strong></summary>
+  <summary><strong style="font-size:1.1em;"> Trainee Engineer Intern</strong> at <strong>Larsen & Toubro</strong></summary>
   <br>
   <em>May - July 2025</em>
   <ul>
@@ -38,7 +38,7 @@ Analytics-driven student engineer from NIT Patna with a proven track record of t
 </details>
 
 <details>
-  <summary><strong style="font-size:1.1em;">► Marketing Intern</strong> at <strong>TRADE WITH MARKET</strong></summary>
+  <summary><strong style="font-size:1.1em;"> Marketing Intern</strong> at <strong>TRADE WITH MARKET</strong></summary>
   <br>
   <em>Apr - May 2025</em>
   <ul>
@@ -49,7 +49,7 @@ Analytics-driven student engineer from NIT Patna with a proven track record of t
 </details>
 
 <details>
-  <summary><strong style="font-size:1.1em;">► Intern</strong> at <strong>Physics Wallah Limited</strong></summary>
+  <summary><strong style="font-size:1.1em;"> Intern</strong> at <strong>Physics Wallah Limited</strong></summary>
   <br>
   <em>2024 - 2025</em>
   <ul>
