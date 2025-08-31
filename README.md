@@ -1,9 +1,8 @@
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=FFFFFF&bg=000000&center=true&width=700&lines=Hi+%F0%9F%91%8B%2C+I'm+ARYAN+from+INDIA"
-    alt="Typing animation: Hi, I'm ARYAN from INDIA"
-  />
-</p>
+<h1 align="center">
+<a href="https://git.io/typing-svg">
+<img src="https://www.google.com/search?q=https://readme-typing-svg.herokuapp.com%3Ffont%3DFira%2BCode%26size%3D30%26pause%3D1000%26color%3D20C20E%26center%3Dtrue%26vCenter%3Dtrue%26width%3D435%26lines%3DHi%2B%25F0%259F%2591%258B%252C%2BI%27m%2BARYAN%3BA%2BPassionate%2BDeveloper%2Bfrom%2BINDIA" alt="Typing SVG" />
+</a>
+</h1>
 
 <p align="center">
   <a href="https://linkedin.com/in/aryanranjan2005">
